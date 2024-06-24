@@ -1,18 +1,1 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A simple distributed file sytem where the client can write their files on any of the server and then make queries on them. The data on all the servers will be syncronized at regurlar intervals.The merging or synchronization is optimized for less memory usage and less time taken using multiple level of indxing, partial logging and some other methods too. Currently only mongodb and mySQL are used in the servers.Currently to mimic the communication between the servers, the instances of all the servers are made in a single main function. In the future the plan is to replace with this with communication via sockets and also to provide more database options on the servers.
